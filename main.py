@@ -1,10 +1,8 @@
-def greet(name: str = "nanashi") -> None:
-    print(f"Hello, {name}!")
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-def main() -> None:
-    greet()
-
-
-if __name__ == "__main__":
-    main()
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
