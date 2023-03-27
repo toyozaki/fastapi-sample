@@ -23,6 +23,7 @@ phases:
       - printf '{"name":"%s","ImageURI":"%s"}' $IMAGE_REPO_NAME $IMAGE:$IMAGE_TAG > imageDetail.json
       - ./generate-appspec.sh
       - ./generate-taskdef.sh
+      - ls -l
 artiartifacts:
   files:
     - imageDetail.json
