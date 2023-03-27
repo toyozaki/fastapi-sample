@@ -24,7 +24,7 @@ phases:
       - ./generate-appspec.sh
       - ./generate-taskdef.sh
       - ls -l
-artiartifacts:
+artifacts:
   files:
     - imageDetail.json
     - taskdef.json
