@@ -27,4 +27,4 @@ artiartifacts:
   files:
     - imageDetail.json
     - taskdef.json
-    - appspec.yaml
+    - appspec.yml
